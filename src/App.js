@@ -15,17 +15,21 @@ function App() {
     };
   } else {
     LoginElement = () => {
+      let google_redirect_path = "http://musinsa-price-tracker.com/api/oauth/login/google?redirect_url=" + window.location.origin;
+      let kakao_redirect_path = "http://musinsa-price-tracker.com/api/oauth/login/kakao?redirect_url=" + window.location.origin;
+      let naver_redirect_path = "http://musinsa-price-tracker.com/api/oauth/login/naver?redirect_url=" + window.location.origin;
+      
       return (
         <div>
-          <a href="http://musinsa-price-tracker.com/api/oauth/login/google?redirect_url=http://musinsa-price-tracker.com">
+          <a href={google_redirect_path}>
             <button>Google Login</button>
           </a> <br/>
           
-          <a href="http://musinsa-price-tracker.com/api/oauth/login/kakao?redirect_url=http://musinsa-price-tracker.com">
+          <a href={kakao_redirect_path}>
             <button>Kakao Login</button>
           </a> <br/>
           
-          <a href="http://musinsa-price-tracker.com/api/oauth/login/naver?redirect_url=http://musinsa-price-tracker.com">
+          <a href={naver_redirect_path}>
             <button>Naver Login</button>
           </a> <br/>
         </div>
