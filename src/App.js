@@ -21,15 +21,21 @@ function App() {
       
       return (
         <div>
-          <a href={google_redirect_path}>
+          <a href={google_redirect_path}
+              target="_blank"
+              rel="noopener noreferrer">
             <button>Google Login</button>
           </a> <br/>
           
-          <a href={kakao_redirect_path}>
+          <a href={kakao_redirect_path}
+              target="_blank"
+              rel="noopener noreferrer">
             <button>Kakao Login</button>
           </a> <br/>
           
-          <a href={naver_redirect_path}>
+          <a href={naver_redirect_path}
+              target="_blank"
+              rel="noopener noreferrer">
             <button>Naver Login</button>
           </a> <br/>
         </div>
